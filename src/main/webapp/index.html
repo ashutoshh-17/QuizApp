@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizApp</title>
+    <style>
+        body {
+            background-image: url('background.png');
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            max-width: 600px;
+            width: 100%;
+        }
+        header h2 {
+            margin: 0;
+            font-size: 2em;
+            color: #007BFF;
+            text-align: center;
+        }
+        .introduction p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #555;
+            text-align: justify;
+        }
+        .introduction span {
+            font-weight: bold;
+            color: #007BFF;
+        }
+        .introduction ul {
+            text-align: left;
+            padding-left: 20px;
+        }
+        .introduction li {
+            margin-bottom: 10px;
+        }
+        .buttons {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .buttons a {
+            text-decoration: none;
+        }
+        .buttons button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .buttons .quit {
+            background-color: #28a745;
+        }
+        .buttons button:hover {
+            background-color: #0056b3;
+        }
+        .buttons .quit:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>Welcome to QuizApp</h2>
+        </header>
+        <div class="info_box">
+            <div class="info_list">
+                <section class="introduction">
+                    <p>Welcome to <span>QuizApp</span>, your ultimate destination for testing and expanding your knowledge. With QuizApp, you can dive into a world of fun and interactive quizzes that cover a wide range of topics. Whether you are a trivia enthusiast, a student looking to learn, or simply someone who loves a challenge, QuizApp has something for everyone.</p>
+                    <p>Here's what you can expect from QuizApp:</p>
+                    <ul>
+                        <li><strong>Variety of Quizzes:</strong> Choose from a diverse selection of quizzes designed to test your knowledge across different subjects.</li>
+                        <li><strong>Interactive Experience:</strong> Enjoy an engaging and user-friendly interface that makes learning fun.</li>
+                        <li><strong>Track Your Progress:</strong> Keep track of your scores and see how you improve over time.</li>
+                        <li><strong>Learn and Grow:</strong> Discover new facts and information with every quiz you take.</li>
+                    </ul>
+                    <p>Get started today by logging in or signing up. Join the QuizApp community and take your knowledge to the next level!</p>
+                </section>
+            </div>
+            <div class="buttons">
+                <a href="login.jsp"><button class="quit">Login</button></a>
+                <a href="register.jsp"><button class="restart">Sign Up</button></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
